@@ -134,6 +134,16 @@ def message_done():
                         title="Thank you"            
     )
 
+def reset():
+    values = []
+    stat_values = {}
+    combo['values'] = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Wisdom', 'Charisma']
+    combo.pack()
+    
+    messagebox.showinfo(message = "Values has been reset",
+                        title="Reset"            
+    )
+
 
 # display
 number_label = tkinter.Label(root, text="", font="Helvetica 12")
@@ -162,5 +172,7 @@ button = tkinter.Button(root, text="Roll 4D6", fg='blue', command=lambda: [d6_ro
 button.pack(expand=True)
 
 #button to reset
+reset_button = ttk.Button(text = "Reset", command = reset)
+reset_button.pack()
 
 root.mainloop()
