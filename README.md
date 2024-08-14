@@ -14,4 +14,4 @@ The main attributes to be rolled here are:
 ## Pre-requisites
 
 User must have the `playsound` library installed. To do so, simply type the command:
-> pip install playsound
+`pip install playsound`
